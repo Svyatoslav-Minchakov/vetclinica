@@ -1,0 +1,187 @@
+.job-offer {
+
+  .tittle {
+    margin-bottom: 24px;
+  }
+
+  .subtittle {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 30px;
+    margin-bottom: 48px;
+  }
+
+  .tittle-third-level {
+    margin-bottom: 24px;
+  }
+
+  .container {
+    background-image: url(../../images/common/bg.svg);
+    background-position: top 20px right 20px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+  }
+
+  
+}
+
+.job-offer__list {
+  margin-bottom: 24px;
+  
+}
+
+.job-offer__list-item {
+  @include font(500, 14px, 20px);
+  color: var(--main-color);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+  }
+}
+
+.job-offer__list-vac-item {
+  
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+
+
+.job-offer__list-vac-btn {
+  @include font($fs:14px, $lh:20px);
+  color: var(--text-modify-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-bottom: 1px solid var(--text-modify-color);
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  text-align: start;
+  position: relative;
+  z-index: 1;
+
+  &:nth-child(2) {
+    z-index: 2;
+  }
+
+  &:nth-child(1) {
+    z-index: 3;
+  }
+
+  &:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+
+  &:hover .job-offer__list-vac-svg {
+    fill: var(--hover-color);
+  }
+
+  &:focus {
+    color: var(--visited-color);
+    border-color: var(--visited-color);
+  }
+
+  &:focus .job-offer__list-vac-svg {
+    fill: var(--visited-color);
+    transform: rotate(-90deg);
+  }
+
+  &:focus + .job-offer__overlay {
+    display: block;
+  }
+}
+
+.job-offer__list-vac-svg {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+  fill: var(--text-modify-color);
+}
+
+.job-offer__overlay {
+  padding: 24px 15px 15px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 10px 10px 0px 0px;
+  display: none;
+  
+}
+
+.job-offer__overlay-list {
+  margin-bottom: 24px;
+}
+
+.job-offer__overlay-item {
+  @include font($fs:14px, $lh:20px);
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+  }
+}
+
+.job-offer__physician {
+  @include font($fs:14px, $lh:20px);
+  margin-bottom: 24px;
+}
+
+.job-offer__list-task-text {
+  @include font($fs:14px, $lh:20px);
+}
+
+.list-number {
+  color: var(--accent-color);
+}
+
+.job-offer__ovrrlay-btn {
+  @include font(500, 14px, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  width: 100%;
+  background-color: var(--accent-color);
+  border: none;
+  height: 52px;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
+
+.job-offer__list-task {
+  margin-bottom: 24px;
+}
+

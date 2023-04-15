@@ -1,0 +1,150 @@
+
+
+.header__first-floor {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 45px;
+  position: relative;
+}
+
+.header__link-map {
+  @include font(400, 16px, 24px);
+  color: var(--light-color);
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 108px;
+    height: 1px;
+    // background-color: var(--line-color);
+    background-image: url(../../images/header/underline.svg);
+    transform: translateY(-2px);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(../../images/header/map-pin.svg);
+    // background-size: 12px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 16px;
+    margin-right: 8px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+  }
+}
+
+.header__link-form {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+
+.header__link-svg {
+  width: 23px;
+  height: 26px;
+  fill: var(--light-color);
+}
+
+.header__second-floor {
+  display: flex;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo-image {
+  width: 47px;
+  height: 47px;
+}
+
+.header__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.header__company{
+  @include font(500, 18px, 21px);
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+  display: block;
+}
+
+.header__center {
+  @include font(500, 10px, 12px);
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+  display: block;
+}
+
+.mobile-menu {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mobile-menu-svg {
+  width: 56px;
+  height: 27px;
+}
+
+.header__third-floor {
+  max-width: 320px;
+  padding: 30px 20px 24px 20px;
+}
+
+.header__list {
+  display: flex;
+  align-items: end;
+  
+  
+}
+
+.header__list-item {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+
+  &:first-child {
+    margin-right: 14px;
+  }
+}
+
+.header__list-btn {
+  @include font(400, 14px, 20px);
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header__list-svg-home {
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+  margin-right: 9px;
+}
+
+.header__list-svg-direction {
+  width: 8px;
+  height: 8px;
+  margin-left: 7px;
+  fill: var(--accent-color);
+}

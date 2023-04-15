@@ -1,0 +1,15 @@
+.tittle {
+  @include font(500, 24px, 32px);
+}
+
+.subtittle {
+  @include font(500, 18px, 22px);
+}
+
+.description {
+  @include font($fs:14px, $lh:20px);
+}
+
+.tittle-third-level {
+  @include font(500, 24px, 32px);
+}
