@@ -1,0 +1,26 @@
+.why-we {
+
+  .tittle {
+    margin-bottom: 24px;
+  }
+
+  .tittle-third-level {
+    margin-bottom: 18px;
+  }
+
+  .container {
+    background-image: url(../../images/why-we/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  }
+}
+
+.why-we__item {
+  margin-bottom: 44px;
+}
+
+.why-we__text {
+  @include font($fs:14px, $lh:20px);
+  margin-bottom: 24px;
+}

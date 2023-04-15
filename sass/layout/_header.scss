@@ -133,6 +133,12 @@
   border: none;
   padding: 0;
   cursor: pointer;
+
+  &:focus {
+    color: var(--visited-color);
+  }
+
+  
 }
 
 .header__list-svg-home {
