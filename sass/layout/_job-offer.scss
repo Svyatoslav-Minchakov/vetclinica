@@ -73,7 +73,7 @@
 
 
 .job-offer__list-vac-btn {
-  @include font($fs:14px, $lh:20px);
+  @include font($fs:12px, $lh:18px);
   color: var(--text-modify-color);
   display: flex;
   justify-content: space-between;
@@ -125,6 +125,7 @@
   height: 8px;
   transform: rotate(90deg);
   fill: var(--text-modify-color);
+  margin-right: 10px;
 }
 
 .job-offer__overlay {

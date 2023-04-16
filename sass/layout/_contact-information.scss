@@ -1,0 +1,104 @@
+.contact-information {
+  .container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--light-color);
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+
+  }
+
+  .social-list {
+    margin-bottom: 32px;
+  }
+
+  .tittle {
+    margin-bottom: 24px;
+  }
+}
+
+.contact-information__list {
+  
+  padding-bottom: 32px;
+}
+
+.contact-information__list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contact-information__list-text {
+  @include font(500, 18px, 22px);
+
+  &::after {
+    content:'';
+    width: 70px;
+    height: 2px;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.contact-information__list-item {
+  
+  &:first-child {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+  }
+
+  &:last-child:hover,
+  &:last-child:focus {
+    color: var(--hover-color);
+  }
+
+  &:last-child:hover .contact-information__list-svg {
+    fill: var(--hover-color);
+  }
+}
+
+.contact-information__list-link {
+  display: block;
+  max-width: 172px;
+  margin-right: 18px;
+  @include font(500, 18px, 22px);
+}
+
+.contact-information__list-svg {
+  width: 20px;
+  height: 7px;
+  fill: var(--main-color);
+}
+
+.bus-stations-list {
+  margin-bottom: 32px;
+  
+}
+
+.bus-stations-list-item {
+  margin-top: 8px;
+  @include font($fs:14px, $lh:20px);
+  color: #6D758B;
+}
+
+.sign-metro {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.contact-information__img-map {
+  position: relative;
+  bottom: 10px;
+  z-index: index -1;
+  max-width: 320px;
+  margin: 0 auto;
+}

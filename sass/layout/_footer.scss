@@ -1,0 +1,141 @@
+.footer {
+
+  
+  .container {
+    padding: 48px 20px;
+    background-color: var(--main-color);
+    position: relative;
+    bottom: 10px;
+  }
+
+  .social-list {
+    background-color: transparent;
+    justify-content: start;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .social-list-link {
+    background-color: var(--light-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--bg-color);
+    }
+  }
+
+  .social-list-svg {
+    fill: var(--main-color);
+  }
+}
+
+.footer__logotipe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.footer__company {
+  letter-spacing: 0.01em;
+  @include font(500, 18px, 21px);
+  color: var(--light-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__center {
+  @include font(500, 10px, 12px);
+  letter-spacing: 0.01em;
+  color: var(--light-color);
+  display: block;
+}
+
+.footer__main-menu-box {
+  margin-bottom: 18px;
+}
+
+.footer__btn {
+  @include font(500, 18px, 22px);
+  color: var(--bg-color);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &:focus + .footer__main-list {
+    display: block;
+  }
+
+  &:focus {
+    color: var(--visited-color);
+  }
+
+  &:focus .footer__svg {
+    fill: var(--visited-color);
+    transform: rotate(90deg);
+  }
+}
+
+.footer__svg {
+  width: 8px;
+  height: 8px;
+  fill: var(--bg-color);
+  transform: rotate(-90deg);
+
+}
+
+.footer__main-list {
+  display: none;
+
+  &::after {
+    content:'';
+    width: 70px;
+    height: 2px;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    display: block;
+    margin-top: 8px;
+  }
+
+  
+}
+
+
+.footer__main-list-link {
+  @include font(400, 14px, 20px);
+  color: var(--bg-color);
+  padding: 0;
+  display: flex;
+}
+
+.footer__adress-list-item {
+  @include font(500, 18px, 22px);
+  color: var(--bg-color);
+}
+
+.footer__adress-list-item:nth-child(2),
+.footer__adress-list-item:nth-child(3),
+.footer__adress-list-item:nth-child(6) {
+  font-weight: 400;
+}
+
+.footer__adress-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__adress-list-item:nth-child(6) {
+  margin-bottom: 24px;
+}
+
+.footer__text {
+  @include font(400, 14px, 20px);
+  color: rgba(235, 245, 253, 0.64);
+  margin-bottom: 4px;
+}
+
+.footer__copyright {
+  @include font(300, 14px, 20px);
+  color: var(--light-color);
+  margin-top: 18px;
+}

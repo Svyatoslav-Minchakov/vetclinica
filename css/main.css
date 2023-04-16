@@ -362,8 +362,8 @@ body {
 
 .job-offer__list-vac-btn {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714286;
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--text-modify-color);
   display: flex;
   justify-content: space-between;
@@ -408,6 +408,7 @@ body {
   height: 8px;
   transform: rotate(90deg);
   fill: var(--text-modify-color);
+  margin-right: 10px;
 }
 
 .job-offer__overlay {
@@ -632,4 +633,239 @@ body {
   width: 24px;
   height: 24px;
   opacity: 0;
+}
+
+.contact-information .container {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 2;
+  background-color: var(--light-color);
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+}
+.contact-information .social-list {
+  margin-bottom: 32px;
+}
+.contact-information .tittle {
+  margin-bottom: 24px;
+}
+
+.contact-information__list {
+  padding-bottom: 32px;
+}
+
+.contact-information__list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contact-information__list-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+.contact-information__list-text::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  display: block;
+  margin-top: 8px;
+}
+
+.contact-information__list-item:first-child {
+  display: flex;
+  align-items: baseline;
+}
+.contact-information__list-item:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+.contact-information__list-item:last-child:hover, .contact-information__list-item:last-child:focus {
+  color: var(--hover-color);
+}
+.contact-information__list-item:last-child:hover .contact-information__list-svg {
+  fill: var(--hover-color);
+}
+
+.contact-information__list-link {
+  display: block;
+  max-width: 172px;
+  margin-right: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+
+.contact-information__list-svg {
+  width: 20px;
+  height: 7px;
+  fill: var(--main-color);
+}
+
+.bus-stations-list {
+  margin-bottom: 32px;
+}
+
+.bus-stations-list-item {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #6D758B;
+}
+
+.sign-metro {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.contact-information__img-map {
+  position: relative;
+  bottom: 10px;
+  z-index: index -1;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.footer .container {
+  padding: 48px 20px;
+  background-color: var(--main-color);
+  position: relative;
+  bottom: 10px;
+}
+.footer .social-list {
+  background-color: transparent;
+  justify-content: start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.footer .social-list-link {
+  background-color: var(--light-color);
+}
+.footer .social-list-link:hover, .footer .social-list-link:focus {
+  background-color: var(--bg-color);
+}
+.footer .social-list-svg {
+  fill: var(--main-color);
+}
+
+.footer__logotipe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.footer__company {
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  color: var(--light-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__center {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--light-color);
+  display: block;
+}
+
+.footer__main-menu-box {
+  margin-bottom: 18px;
+}
+
+.footer__btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--bg-color);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.footer__btn:focus + .footer__main-list {
+  display: block;
+}
+.footer__btn:focus {
+  color: var(--visited-color);
+}
+.footer__btn:focus .footer__svg {
+  fill: var(--visited-color);
+  transform: rotate(90deg);
+}
+
+.footer__svg {
+  width: 8px;
+  height: 8px;
+  fill: var(--bg-color);
+  transform: rotate(-90deg);
+}
+
+.footer__main-list {
+  display: none;
+}
+.footer__main-list::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  display: block;
+  margin-top: 8px;
+}
+
+.footer__main-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: var(--bg-color);
+  padding: 0;
+  display: flex;
+}
+
+.footer__adress-list-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--bg-color);
+}
+
+.footer__adress-list-item:nth-child(2),
+.footer__adress-list-item:nth-child(3),
+.footer__adress-list-item:nth-child(6) {
+  font-weight: 400;
+}
+
+.footer__adress-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__adress-list-item:nth-child(6) {
+  margin-bottom: 24px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: rgba(235, 245, 253, 0.64);
+  margin-bottom: 4px;
+}
+
+.footer__copyright {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: var(--light-color);
+  margin-top: 18px;
 }/*# sourceMappingURL=main.css.map */
