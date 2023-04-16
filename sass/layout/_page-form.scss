@@ -1,0 +1,137 @@
+
+.page-form {
+  
+  padding-bottom: 48px;
+  .tittle-third-level {
+    margin-bottom: 24px;
+  }
+
+  .container {
+    background-image: url(../images/common/bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+  }
+}
+
+.page-form__btn {
+  background-color: var(--accent-color);
+  width: 100%;
+  color: var(--light-color);
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+} 
+
+.page-form__enter {
+  width: 100%;
+  height: 34px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 18px;
+  @include font($fs:14px, $lh:20px);
+  padding: 0 8px;
+  transition: border-color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: var(--hover-color);
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: var(--hover-color);
+  }
+
+  &::placeholder {
+    @include font($fs:14px, $lh:20px);
+    color: var(--line-color);
+    transition: color 250ms ease-in;
+
+  }
+}
+
+.page-form__message {
+  width: 272px;
+  height: 128px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid var(--line-color);
+  @include font($fs:14px, $lh:16px);
+  margin-bottom: 24px;
+  padding: 8px;
+  transition: border-bottom-color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom-color: var(--hover-color);
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: var(--hover-color);
+  }
+
+  &::placeholder {
+    @include font($fs:14px, $lh:16px);
+    transition: color 250ms ease-in;
+  }
+}
+
+.page-form__text {
+  @include font($fs:14px, $lh:20px);
+  margin-bottom: 24px;
+}
+
+.page-form__checkbox {
+
+  &:checked + .page-form__checkbox-sign .fake-chackbox-svg {
+    opacity: 1;
+  }
+
+  &:checked + .page-form__checkbox-sign .face-chackbox {
+    border: none;
+  }
+}
+
+.page-form__checkbox-sign {
+  @include font($fs:12px, $lh:14px);
+  color: rgba(27, 39, 74, 0.64);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.page-form__chackbox-link {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.checkbox-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.face-chackbox {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line-color);
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fake-chackbox-svg {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}

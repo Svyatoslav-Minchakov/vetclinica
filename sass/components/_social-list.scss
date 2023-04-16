@@ -1,0 +1,43 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  background-color: var(--bg-color);
+  padding: 10px 0;
+}
+
+.social-list-svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--bg-color);
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  width: 20px;
+  height: 22px;
+}
+
+.vkontakte {
+  width: 22px;
+  height: 22px;
+}
+
+.social-list-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
