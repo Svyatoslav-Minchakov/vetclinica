@@ -93,6 +93,45 @@ body {
   --text-modify-color: #3897F0;
 }
 
+.mobile-menu {
+  height: 100vh;
+  max-width: 320px;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 4px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease-in, visibility 250ms ease-in;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: var(--light-color);
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -209,6 +248,7 @@ body {
   display: flex;
   padding: 16px 20px;
   border-bottom: 1px solid var(--line-color);
+  position: relative;
 }
 
 .logo {
@@ -244,7 +284,7 @@ body {
   display: block;
 }
 
-.mobile-menu {
+.mobile-menu-btn {
   background-color: transparent;
   border: none;
   margin-left: auto;
@@ -276,7 +316,7 @@ body {
   margin-right: 14px;
 }
 
-.header__list-btn {
+.header__list-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714286;
@@ -286,7 +326,7 @@ body {
   padding: 0;
   cursor: pointer;
 }
-.header__list-btn:focus {
+.header__list-link:focus {
   color: var(--visited-color);
 }
 
@@ -324,11 +364,7 @@ body {
   background-size: 60px 60px;
   background-repeat: no-repeat;
   transition: transform 250ms ease-in;
-  display: none;
   padding-bottom: 24px;
-}
-.job-offer .is-open {
-  display: block;
 }
 
 .job-offer__list {
@@ -692,11 +728,16 @@ body {
 
 .contact-information__list-link {
   display: block;
+  text-decoration: none;
+  color: var(--main-color);
   max-width: 172px;
   margin-right: 18px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
+}
+.contact-information__list-link:hover, .contact-information__list-link:focus {
+  color: var(--hover-color);
 }
 
 .contact-information__list-svg {

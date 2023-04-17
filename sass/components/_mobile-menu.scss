@@ -1,0 +1,40 @@
+.mobile-menu {
+  height: 100vh;
+  max-width: 320px;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 4px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  
+  transition: opacity 250ms ease-in, visibility 250ms ease-in;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  
+}
+
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: var(--light-color);
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}

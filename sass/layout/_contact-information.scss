@@ -67,9 +67,16 @@
 
 .contact-information__list-link {
   display: block;
+  text-decoration: none;
+  color: var(--main-color);
   max-width: 172px;
   margin-right: 18px;
   @include font(500, 18px, 22px);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 
 .contact-information__list-svg {

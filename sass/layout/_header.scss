@@ -59,6 +59,7 @@
   display: flex;
   padding: 16px 20px;
   border-bottom: 1px solid var(--line-color);
+  position: relative;
 }
 
 .logo {
@@ -91,7 +92,7 @@
   display: block;
 }
 
-.mobile-menu {
+.mobile-menu-btn {
   background-color: transparent;
   border: none;
   margin-left: auto;
@@ -126,7 +127,7 @@
   }
 }
 
-.header__list-btn {
+.header__list-link {
   @include font(400, 14px, 20px);
   color: var(--accent-color);
   background-color: transparent;

@@ -20,8 +20,8 @@
     <section class="header">
       <div class="container">
         <div class="header__first-floor">
-          <a href="" class="header__link-map">Как проехать?</a>
-          <a href="" class="header__link-form">
+          <a href="#contact-information__list-link" class="header__link-map">Как проехать?</a>
+          <a href="#page-form" class="header__link-form">
             <svg class="header__link-svg">
               <use href="./images/icons.svg#icon-sign"></use>
             </svg>
@@ -35,7 +35,7 @@
             <span class="header__company">ДокВет</span>
             <span class="header__center">Ветеринарный центр</span>
           </p>
-          <button class="mobile-menu" type="button">
+          <button class="mobile-menu-btn js-open-menu" type="button">
             <img class="mobile-menu-svg" src="./images/header/burger.svg" alt="" />
           </button>
         </div>
@@ -46,14 +46,14 @@
               <svg class="header__list-svg-home">
                 <use href="./images/icons.svg#icon-home"></use>
               </svg>
-              <button class="header__list-btn js-close-menu">Главная</button>
+              <a href="" class="header__list-link">Главная</a>
               <svg class="header__list-svg-direction">
                 <use href="./images/icons.svg#icon-direction"></use>
               </svg>
             </li>
             <li class="header__list-item">
-
-              <button class="header__list-btn js-open-menu">Вакансии</button>
+  
+              <a href="#opened offers" class="header__list-link">Вакансии</a>
             </li>
           </ul>
         </div>
@@ -62,214 +62,211 @@
 
     <main>
       <section class="job-offer ">
-        <div class="hidden-container">
-          <div class="container js-menu-container">
-            <h2 class="tittle">Работа в ДокВет</h2>
-            <p class="subtittle">Наша клиника —<br>
-              амбициозный проект<br> смиссией изменить ветеринарную индустрию:</p>
-            <ul class="job-offer__list">
-              <li class="job-offer__list-item">
-                <p>
-                  <b>Область в ветеринарии,</b> которая занимается диагностикой Врач поможет Вам оформить
-                </p>
+        <div class="container">
+          <h2 class="tittle">Работа в ДокВет</h2>
+          <p class="subtittle">Наша клиника —<br>
+            амбициозный проект<br> смиссией изменить ветеринарную индустрию:</p>
+          <ul class="job-offer__list">
+            <li class="job-offer__list-item">
+              <p>
+                <b>Область в ветеринарии,</b> которая занимается диагностикой Врач поможет Вам оформить
+              </p>
+            </li>
+            <li class="job-offer__list-item">
+              <p>
+                <b>Область в ветеринарии,</b> которая занимается диагностикой Врач поможет Вам оформить ветеринарный паспорт и чипировать Вашего питомца
+              </p>
+            </li>
+            <li class="job-offer__list-item">
+              <p>
+                <b>Область в ветеринарии,</b> которая занимается диагностикой
+              </p>
+            </li>
+          </ul>
+          <p class="description">
+            Врач-терапевт — <br>
+            это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика
+            или консультация на такие темы,
+            как особенности выращивания, содержания и кормления питомца!
+          </p>
+  
+          <div class="job-offer__opened">
+            <h3 id="opened offers" class="tittle-third-level">
+              Открытые вакансии
+            </h3>
+            <ul class="job-offer__list-vac">
+              <li class="job-offer__list-vac-item">
+                <button class="job-offer__list-vac-btn">
+                  Ветеринарный врач /<br>
+  ветеринарный врач хирург
+                  <svg class="job-offer__list-vac-svg">
+                    <use href="./images/icons.svg#icon-direction"></use>
+                  </svg>
+                </button>
+                <div class="job-offer__overlay">
+                  <h3 class="tittle-third-level">
+                    Наши ожидания:
+                  </h3>
+                  <ul class="job-offer__overlay-list">
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Оконченное высшее 
+                        профильное образование
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Практический опыт работы от 2-3 лет
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Любовь к животным 
+                        и желание им помочь
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Наличие сертификатов о пройденном дополнительном образовании
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
+                      </p>
+                    </li>
+                  </ul>
+                  <p class="job-offer__physician">
+                    Врач-терапевт —<br>
+                    это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!
+                  </p>
+                  <h3 class="tittle-third-level">Задачи:</h3>
+                  <ul class="job-offer__list-task">
+                    <li class="job-offer__list-task-item">
+                      <p class="job-offer__list-task-text">
+                        <span class="list-number">1.</span> Оконченное высшее 
+                        профильное образование
+                      </p>
+                    </li>
+                    <li class="job-offer__list-task-item">
+                      <p class="job-offer__list-task-text">
+                        <span class="list-number">2.</span> Практический опыт работы 
+                        от 2-3 лет
+                      </p>
+                    </li>
+                    <li class="job-offer__list-task-item">
+                      <p class="job-offer__list-task-text">
+                        <span class="list-number">3.</span> Любовь к животным и желание им помочь
+                      </p>
+                    </li>
+                  </ul>
+  
+                  <button class="job-offer__ovrrlay-btn">Откликнуться</button>
+                </div>
               </li>
-              <li class="job-offer__list-item">
-                <p>
-                  <b>Область в ветеринарии,</b> которая занимается диагностикой Врач поможет Вам оформить ветеринарный паспорт и чипировать Вашего питомца
-                </p>
+              <li class="job-offer__list-vac-item">
+                <button class="job-offer__list-vac-btn">
+                  Ассистент ветеринарного врача /<br> 
+                  операционная сестра
+                  <svg class="job-offer__list-vac-svg">
+                    <use href="./images/icons.svg#icon-direction"></use>
+                  </svg>
+                </button>
+                <div class="job-offer__overlay">
+                  <h3 class="tittle-third-level">
+                    Наши ожидания:
+                  </h3>
+                  <ul class="job-offer__overlay-list">
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Оконченное высшее 
+                        профильное образование
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Практический опыт работы от 2-3 лет
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Любовь к животным 
+                        и желание им помочь
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Наличие сертификатов о пройденном дополнительном образовании
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="job-offer__list-item">
-                <p>
-                  <b>Область в ветеринарии,</b> которая занимается диагностикой
-                </p>
+              <li class="job-offer__list-vac-item">
+                <button class="job-offer__list-vac-btn">
+                  Менеджер по работе /<br>с клиентами 
+                  <svg class="job-offer__list-vac-svg">
+                    <use href="./images/icons.svg#icon-direction"></use>
+                  </svg>
+                </button>
+                <div class="job-offer__overlay">
+                  <h3 class="tittle-third-level">
+                    Наши ожидания:
+                  </h3>
+                  <ul class="job-offer__overlay-list">
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Оконченное высшее 
+                        профильное образование
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Практический опыт работы от 2-3 лет
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Любовь к животным 
+                        и желание им помочь
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Наличие сертификатов о пройденном дополнительном образовании
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
+                      </p>
+                    </li>
+                    <li class="job-offer__overlay-item">
+                      <p class="job-offer__overlay-text">
+                        Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
-            <p class="description">
-              Врач-терапевт — <br>
-              это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика
-              или консультация на такие темы,
-              как особенности выращивания, содержания и кормления питомца!
-            </p>
-    
-            <div class="job-offer__opened">
-              <p class="tittle-third-level">
-                Открытые вакансии
-              </p>
-              <ul class="job-offer__list-vac">
-                <li class="job-offer__list-vac-item">
-                  <button class="job-offer__list-vac-btn">
-                    Ветеринарный врач /<br>
-    ветеринарный врач хирург
-                    <svg class="job-offer__list-vac-svg">
-                      <use href="./images/icons.svg#icon-direction"></use>
-                    </svg>
-                  </button>
-                  <div class="job-offer__overlay">
-                    <h3 class="tittle-third-level">
-                      Наши ожидания:
-                    </h3>
-                    <ul class="job-offer__overlay-list">
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Оконченное высшее 
-                          профильное образование
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Практический опыт работы от 2-3 лет
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Любовь к животным 
-                          и желание им помочь
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Наличие сертификатов о пройденном дополнительном образовании
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
-                        </p>
-                      </li>
-                    </ul>
-                    <p class="job-offer__physician">
-                      Врач-терапевт —<br>
-                      это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!
-                    </p>
-                    <h3 class="tittle-third-level">Задачи:</h3>
-                    <ul class="job-offer__list-task">
-                      <li class="job-offer__list-task-item">
-                        <p class="job-offer__list-task-text">
-                          <span class="list-number">1.</span> Оконченное высшее 
-                          профильное образование
-                        </p>
-                      </li>
-                      <li class="job-offer__list-task-item">
-                        <p class="job-offer__list-task-text">
-                          <span class="list-number">2.</span> Практический опыт работы 
-                          от 2-3 лет
-                        </p>
-                      </li>
-                      <li class="job-offer__list-task-item">
-                        <p class="job-offer__list-task-text">
-                          <span class="list-number">3.</span> Любовь к животным и желание им помочь
-                        </p>
-                      </li>
-                    </ul>
-    
-                    <button class="job-offer__ovrrlay-btn">Откликнуться</button>
-                  </div>
-                </li>
-                <li class="job-offer__list-vac-item">
-                  <button class="job-offer__list-vac-btn">
-                    Ассистент ветеринарного врача /<br> 
-                    операционная сестра
-                    <svg class="job-offer__list-vac-svg">
-                      <use href="./images/icons.svg#icon-direction"></use>
-                    </svg>
-                  </button>
-                  <div class="job-offer__overlay">
-                    <h3 class="tittle-third-level">
-                      Наши ожидания:
-                    </h3>
-                    <ul class="job-offer__overlay-list">
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Оконченное высшее 
-                          профильное образование
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Практический опыт работы от 2-3 лет
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Любовь к животным 
-                          и желание им помочь
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Наличие сертификатов о пройденном дополнительном образовании
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="job-offer__list-vac-item">
-                  <button class="job-offer__list-vac-btn">
-                    Менеджер по работе /<br>с клиентами 
-                    <svg class="job-offer__list-vac-svg">
-                      <use href="./images/icons.svg#icon-direction"></use>
-                    </svg>
-                  </button>
-                  <div class="job-offer__overlay">
-                    <h3 class="tittle-third-level">
-                      Наши ожидания:
-                    </h3>
-                    <ul class="job-offer__overlay-list">
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Оконченное высшее 
-                          профильное образование
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Практический опыт работы от 2-3 лет
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Любовь к животным 
-                          и желание им помочь
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Наличие сертификатов о пройденном дополнительном образовании
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Заинтересованность в развитии и совершенствовании своих знаний в области ветеринарии
-                        </p>
-                      </li>
-                      <li class="job-offer__overlay-item">
-                        <p class="job-offer__overlay-text">
-                          Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-        
       </section>
   
       <section class="why-we">
@@ -305,7 +302,7 @@
         </div>
       </section>
   
-      <section class="page-form">
+      <section class="page-form" id="page-form">
         <div class="container">
           <h3 class="tittle-third-level">
             Возникли вопросы или<br> жалобы?
@@ -405,7 +402,7 @@
               </p>
             </li>
             <li class="contact-information__list-item">
-              <a class="contact-information__list-link">
+              <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9A%D0%BE%D0%BB%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9,+11,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+193318/@59.915039,30.4523451,17z/data=!3m1!4b1!4m6!3m5!1s0x46962e3e01c47a21:0x7a1d6636531b8d41!8m2!3d59.915039!4d30.45492!16s%2Fg%2F11csmyjs0r?authuser=0" rel="nofollow" target="_blank" id="contact-information__list-link" class="contact-information__list-link">
                 Построить маршрут 
                 на Яндекс.Карты
               </a>
@@ -592,6 +589,10 @@
         </p>
       </div>
     </section>
+
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__btn-close js-close-menu">X</button>
+    </div>
     <script src="./js/job-offer.js"></script>
   </body>
 </html>
