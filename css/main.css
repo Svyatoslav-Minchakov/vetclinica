@@ -108,9 +108,8 @@ body {
   visibility: hidden;
   pointer-events: none;
   padding: 68px 20px 20px;
-  background-image: linear-gradient(rgba(27, 39, 75, 0.801), rgba(27, 39, 75, 0.986)), url(../../images/mobile-menu/mobile-menu-bg.jpg);
+  background-image: linear-gradient(rgba(27, 39, 75, 0.801), rgba(27, 39, 75, 0.986)), url(../images/mobile-menu/mobile-menu-bg.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   transition: opacity 250ms ease-in, visibility 250ms ease-in;
   display: flex;
