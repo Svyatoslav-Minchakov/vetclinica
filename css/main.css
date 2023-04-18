@@ -173,6 +173,14 @@ body {
   margin-bottom: 18px;
 }
 
+@media screen and (max-height: 420px) {
+  .mobile-menu__social-list-box {
+    display: none;
+  }
+  .mobile-menu {
+    padding-top: 24px;
+  }
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */

@@ -86,3 +86,13 @@
   @include font(400, 14px, 18px);
   margin-bottom: 18px;
 }
+
+@media screen and (max-height: 420px) {
+  .mobile-menu__social-list-box {
+    display: none;
+  }
+
+  .mobile-menu {
+    padding-top: 24px;
+  }
+}
